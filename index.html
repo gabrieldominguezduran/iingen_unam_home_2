@@ -10,6 +10,11 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -17,12 +22,436 @@
     ></script>
     <title>Iingen home page 1</title>
   </head>
+
   <body>
-    <header>
-      <nav>Iingen home page 1</nav>
+    <header class="header">
+      <nav class="navbar fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/img/escudo-unam.png"
+              alt="Logo UNAM"
+              width="40"
+              height="36"
+            />
+            <img
+              src="./assets/img/logoiiw.png"
+              alt="Logo Inegenieria UNAM"
+              width="133"
+              height="40"
+            />
+          </a>
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link">Disabled</a>
+        </div>
+      </nav>
     </header>
-    <main class="container">
-      <section>section one</section>
+    <main class="main__container">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img
+              src="./assets/img/home.jpeg"
+              class="main__img d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <section class="section__two">
+              <div class="topics">
+                <h2 class="decorated"><span>Eventos</span></h2>
+                <div class="dates">
+                  <section class="date">
+                    <h3>OCTUBRE</h3>
+                    <h2>17</h2>
+                    <hr />
+                    <span class="descevent">
+                      <p>Workshop Distributed Acoustic Sensing (DAS)</p></span
+                    >
+
+                    <a
+                      href="http://www.iingen.unam.mx/es-mx/Difusion/Paginas/17102022-Workshop-Distributed-Acoustic-Sensing-DAS.aspx"
+                      target="_blank"
+                      >VER MÁS</a
+                    >
+                  </section>
+                  <hr />
+                  <section class="date">
+                    <h3>OCTUBRE</h3>
+                    <h2>19</h2>
+                    <hr />
+                    <span class="descevent">
+                      <p>
+                        Conferencia Conservación y gestión del patrimonio
+                        construido del periodo moderno
+                      </p>
+                    </span>
+                    <a
+                      href="http://www.iingen.unam.mx/es-mx/Difusion/Paginas/19102022-Conservacion-y-gestion-del-patrimonio-construido-del-Periodo-Moderno.aspx"
+                      target="_blank"
+                      >VER MÁS</a
+                    >
+                  </section>
+                  <hr />
+
+                  <section class="date">
+                    <h3>OCTUBRE</h3>
+                    <h2>19</h2>
+                    <hr />
+                    <span class="descevent">
+                      <p>10 Fiesta de las Ciencias y las Humanidades</p>
+                    </span>
+                    <a href="https://www.dgdc.unam.mx/lafiesta/" target="_blank"
+                      >VER MÁS</a
+                    >
+                  </section>
+                  <hr />
+
+                  <section class="date">
+                    <h3>OCTUBRE</h3>
+                    <h2>21</h2>
+                    <hr />
+                    <span class="descevent">
+                      <p>
+                        2do Encuentro Latinoamericano Residuos de la
+                        Construcción y Demolición
+                      </p>
+                    </span>
+                    <a
+                      href="http://www.iingen.unam.mx/es-mx/Difusion/Paginas/281020222do-Encuentro-Latinoamericano-de-Residuos-de-la-Construccion-y-Demolicion.aspx"
+                      target="_blank"
+                      >VER MÁS</a
+                    >
+                  </section>
+                  <hr />
+                </div>
+              </div>
+            </section>
+          </div>
+          <img
+            src="./assets/img/home.jpeg"
+            class="main__img d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </main>
+    <footer>
+      <div class="limitador">
+        <div class="contenedorl1">
+          <div class="redes2">
+            <div
+              id="addthis_toolbox"
+              class="addthis_toolbox addthis_32x32_white_style circular"
+            >
+              <a class="addthis_button_email"></a>
+              <a class="addthis_button_print"></a>
+              <a class="addthis_button_facebook"></a>
+              <a class="addthis_button_twitter"></a>
+            </div>
+            <script
+              type="text/javascript"
+              src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd0fd6f571f6845"
+            ></script>
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_sharing_toolbox"></div>
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          </div>
+        </div>
+        <div id="line">
+          <hr style="border-top: dashed 1px" />
+        </div>
+
+        <div class="contenedorl1">
+          <div class="contenedorl2">
+            <div class="contenedorl3">
+              <h3>Acerca del IIUNAM</h3>
+
+              <p>
+                En 1956 comienza la historia<a
+                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Historia.aspx"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Historia</a
+                >
+              </p>
+              <p>
+                Conoce más sobre el IIUNAM<a
+                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/default.aspx"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Nosotros</a
+                >
+              </p>
+              <p>
+                Cómo llegar al Instituto<a
+                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Ubicacion.aspx"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Ubicación</a
+                >
+              </p>
+              <p>
+                Conoce la estructura del IIUNAM<a
+                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Organizacion/Paginas/default.aspx"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Organización</a
+                >
+              </p>
+              <p>
+                Reserva tu espacio y acompáñanos<a
+                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/VisitasGuiadas.aspx"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Visitas
+                  guiadas</a
+                >
+              </p>
+              <p>
+                Envíanos tus comentarios<a
+                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Contacto.aspx"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Contacto</a
+                >
+              </p>
+            </div>
+            <div class="contenedorl3">
+              <h3>Servicios IIUNAM</h3>
+
+              <p>
+                Buscas un libro, comunícate<a
+                  href="http://sitios.iingen.unam.mx/USIBiblioteca/"
+                  target="_blank"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>USI
+                  Biblioteca</a
+                >
+              </p>
+              <p>
+                Servicio interno de correo<a
+                  href="https://mail.iingen.unam.mx/owa/auth/logon.aspx?replaceCurrent=1&amp;url=https%3a%2f%2fmail.iingen.unam.mx%2fowa%2f"
+                  target="_blank"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Correo
+                  IINGEN</a
+                >
+              </p>
+              <p>
+                Servicio interno de correo<a
+                  href="https://pumas.iingen.unam.mx/"
+                  target="_blank"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Correo PUMAS</a
+                >
+              </p>
+              <p>
+                <a
+                  href="http://intranet.iingen.unam.mx/default.aspx"
+                  target="_blank"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>INTRANET</a
+                >
+              </p>
+              <p>
+                <a
+                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Directorio.aspx"
+                  target="_blank"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Directorio</a
+                >
+              </p>
+              <p>
+                Comisión Interna para la Igualdad de Género<a
+                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Genero/CInIG/Paginas/default.aspx"
+                  target="_blank"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>CInIG-IIUNAM</a
+                >
+              </p>
+              <p>
+                Apoyo a distancia
+                <a
+                  href="https://iingen.sharepoint.com/sites/Docencia/"
+                  target="_blank"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Actividades
+                  académicas</a
+                >
+                <a
+                  href="https://iingen.sharepoint.com/sites/Espora"
+                  target="_blank"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Programa
+                  ESPORA</a
+                >
+              </p>
+            </div>
+            <div class="contenedorl3">
+              <h3>Difusión</h3>
+
+              <p>
+                Toda la información aquí<a
+                  href="http://www.iingen.unam.mx/es-mx/Difusion/Paginas/default.aspx"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Noticias y
+                  eventos</a
+                >
+              </p>
+              <p>
+                Consulta lo último sobre el IIUNAM<a
+                  href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Gaceta/Paginas/default.aspx"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Gaceta</a
+                >
+              </p>
+              <p>
+                Revisa la producción académica del IIUNAM.<a
+                  href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Articulos/Paginas/default.aspx"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Artículos</a
+                >
+              </p>
+              <p>
+                Encuentra contenido exclusivo<a
+                  href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Paginas/default.aspx"
+                  ><br /><i class="bi bi-arrow-right-circle"></i>Difusión</a
+                >
+              </p>
+              <p>
+                No te pierdas nuestras transmisiones<a
+                  href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Streaming/Paginas/default.aspx"
+                  ><br /><i class="bi bi-arrow-right-circle"></i
+                  >Videostreaming</a
+                >
+              </p>
+            </div>
+            <div class="contenedorl3">
+              <h3>Síguenos</h3>
+              <div class="redes">
+                <a href="https://twitter.com/IIUNAM" target="_blank"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/InstitutoIngenieriaUNAM/"
+                  target="_blank"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/iiunam/" target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/user/IINGENUNAM"
+                  target="_blank"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/iiunam/"
+                  target="_blank"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a href="#"><i class="bi bi-rss" target="_blank"></i></a>
+              </div>
+            </div>
+
+            <div class="contenedorl3">
+              <h3>COVID 19 - IIUNAM</h3>
+              <a
+                href="https://iingen.sharepoint.com/sites/Covid19-IIUNAM"
+                target="_blank"
+                ><img
+                  style="height: 60px"
+                  src="http://www.ii.unam.mx/es-mx/Paginas/Splash_bkp/img/logos/shield-ii-covid-black.svg"
+                  alt=""
+              /></a>
+              <p>Sitio interno</p>
+              <br /><br />
+              <p>
+                Lineamientos generales<a
+                  href="http://www.iingen.unam.mx/es-mx/covid-19/Paginas/default.aspx"
+                  target="_blank"
+                  ><br /><i class="fas fa-arrow-circle-right"></i>COVID-19</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="contenedorl22">
+            <h3>Misión</h3>
+            <p>
+              Contribuir al desarrollo del país y al bienestar de la sociedad a
+              través de la investigación en ingeniería, de la formación de
+              recursos humanos y de la vinculación con la sociedad.
+            </p>
+            <hr />
+            <h3>Visión</h3>
+            <p>
+              Ser el centro de investigación en ingeniería más relevante, de
+              mayor calidad y pertinencia en México, con capacidades para
+              competir a niveles internacionales. Ser generador de conocimientos
+              aplicables a la solución de los grandes problemas de la ingeniería
+              nacional. Ser formador de nuevas generaciones de ingenieros e
+              investigadores de alta calidad comprometidos con el país.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="copy">
+      <div class="limitador">
+        <p>
+          Última Actualización: 2022 Instituto de Ingeniería UNAM, Circuito
+          Escolar s/n, Ciudad Universitaria, Alcaldía Coyoacán, Ciudad de
+          México, C.P. 04510, Teléfono +52 5556233600. ©Todos los derechos UNAM
+          2022. Esta página puede ser reproducida con fines no lucrativos,
+          siempre y cuando no se mutile, se cite la fuente completa y su
+          dirección electrónica. De otra forma requiere permiso previo por
+          escrito de la institución. Hecho en México. 1995 - 2022 |
+          <a
+            href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Contacto.aspx"
+            >Contacto</a
+          >
+          |
+          <!--<a href="#">Mapa de sitio</a> |-->
+          <a href="http://www.iingen.unam.mx/es-mx/Paginas/Splash/Default.aspx"
+            >Inicio</a
+          >
+          |
+          <a
+            href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Contacto.aspx"
+            >Aviso de privacidad</a
+          >
+        </p>
+      </div>
+    </div>
   </body>
 </html>
