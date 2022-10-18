@@ -25,7 +25,7 @@
 
   <body>
     <header class="header">
-      <nav class="navbar fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img
@@ -41,10 +41,53 @@
               height="40"
             />
           </a>
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link">Disabled</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-sm-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="http://www.iingen.unam.mx/es-mx/Investigacion/Paginas/default.aspx"
+                  >Investigación</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="http://www.iingen.unam.mx/es-mx/Estudiantes/Paginas/default.aspx"
+                  >Estudiantes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="http://www.iingen.unam.mx/es-mx/Vinculacion/Paginas/default.aspx"
+                  >Vinculación</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Paginas/default.aspx"
+                  >Difución</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -79,17 +122,12 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="5000">
             <img
-              src="./assets/img/home.jpeg"
+              src="./assets/img/background.jpg"
               class="main__img d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
           </div>
+
           <div class="carousel-item" data-bs-interval="5000">
             <section class="section__two">
               <div class="topics">
@@ -162,11 +200,260 @@
               </div>
             </section>
           </div>
-          <img
-            src="./assets/img/home.jpeg"
-            class="main__img d-block w-100"
-            alt="..."
-          />
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="limitador">
+              <div class="contenedorl1">
+                <div class="redes2">
+                  <div
+                    id="addthis_toolbox"
+                    class="addthis_toolbox addthis_32x32_white_style circular"
+                  >
+                    <a class="addthis_button_email"></a>
+                    <a class="addthis_button_print"></a>
+                    <a class="addthis_button_facebook"></a>
+                    <a class="addthis_button_twitter"></a>
+                  </div>
+                  <script
+                    type="text/javascript"
+                    src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd0fd6f571f6845"
+                  ></script>
+                  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                  <div class="addthis_sharing_toolbox"></div>
+                  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                </div>
+              </div>
+              <div id="line">
+                <hr style="border-top: dashed 1px" />
+              </div>
+
+              <div class="contenedorl1">
+                <div class="contenedorl2">
+                  <div class="contenedorl3">
+                    <h3>Acerca del IIUNAM</h3>
+
+                    <p>
+                      En 1956 comienza la historia<a
+                        href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Historia.aspx"
+                        ><br /><i class="bi bi-arrow-right-circle"></i
+                        >Historia</a
+                      >
+                    </p>
+                    <p>
+                      Conoce más sobre el IIUNAM<a
+                        href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/default.aspx"
+                        ><br /><i class="bi bi-arrow-right-circle"></i
+                        >Nosotros</a
+                      >
+                    </p>
+                    <p>
+                      Cómo llegar al Instituto<a
+                        href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Ubicacion.aspx"
+                        ><br /><i class="bi bi-arrow-right-circle"></i
+                        >Ubicación</a
+                      >
+                    </p>
+                    <p>
+                      Conoce la estructura del IIUNAM<a
+                        href="http://www.iingen.unam.mx/es-mx/Nosotros/Organizacion/Paginas/default.aspx"
+                        ><br /><i class="bi bi-arrow-right-circle"></i
+                        >Organización</a
+                      >
+                    </p>
+                    <p>
+                      Reserva tu espacio y acompáñanos<a
+                        href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/VisitasGuiadas.aspx"
+                        ><br /><i class="bi bi-arrow-right-circle"></i>Visitas
+                        guiadas</a
+                      >
+                    </p>
+                    <p>
+                      Envíanos tus comentarios<a
+                        href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Contacto.aspx"
+                        ><br /><i class="bi bi-arrow-right-circle"></i
+                        >Contacto</a
+                      >
+                    </p>
+                  </div>
+                  <div class="contenedorl3">
+                    <h3>Servicios IIUNAM</h3>
+
+                    <p>
+                      Buscas un libro, comunícate<a
+                        href="http://sitios.iingen.unam.mx/USIBiblioteca/"
+                        target="_blank"
+                        ><br /><i class="bi bi-arrow-right-circle"></i>USI
+                        Biblioteca</a
+                      >
+                    </p>
+                    <p>
+                      Servicio interno de correo<a
+                        href="https://mail.iingen.unam.mx/owa/auth/logon.aspx?replaceCurrent=1&amp;url=https%3a%2f%2fmail.iingen.unam.mx%2fowa%2f"
+                        target="_blank"
+                        ><br /><i class="bi bi-arrow-right-circle"></i>Correo
+                        IINGEN</a
+                      >
+                    </p>
+                    <p>
+                      Servicio interno de correo<a
+                        href="https://pumas.iingen.unam.mx/"
+                        target="_blank"
+                        ><br /><i class="bi bi-arrow-right-circle"></i>Correo
+                        PUMAS</a
+                      >
+                    </p>
+                    <p>
+                      <a
+                        href="http://intranet.iingen.unam.mx/default.aspx"
+                        target="_blank"
+                        ><br /><i class="bi bi-arrow-right-circle"></i
+                        >INTRANET</a
+                      >
+                    </p>
+                    <p>
+                      <a
+                        href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Directorio.aspx"
+                        target="_blank"
+                        ><br /><i class="bi bi-arrow-right-circle"></i
+                        >Directorio</a
+                      >
+                    </p>
+                    <p>
+                      Comisión Interna para la Igualdad de Género<a
+                        href="http://www.iingen.unam.mx/es-mx/Nosotros/Genero/CInIG/Paginas/default.aspx"
+                        target="_blank"
+                        ><br /><i class="bi bi-arrow-right-circle"></i
+                        >CInIG-IIUNAM</a
+                      >
+                    </p>
+                    <p>
+                      Apoyo a distancia
+                      <a
+                        href="https://iingen.sharepoint.com/sites/Docencia/"
+                        target="_blank"
+                        ><br /><i class="bi bi-arrow-right-circle"></i
+                        >Actividades académicas</a
+                      >
+                      <a
+                        href="https://iingen.sharepoint.com/sites/Espora"
+                        target="_blank"
+                        ><br /><i class="bi bi-arrow-right-circle"></i>Programa
+                        ESPORA</a
+                      >
+                    </p>
+                  </div>
+                  <div class="contenedorl3">
+                    <h3>Difusión</h3>
+
+                    <p>
+                      Toda la información aquí<a
+                        href="http://www.iingen.unam.mx/es-mx/Difusion/Paginas/default.aspx"
+                        ><br /><i class="bi bi-arrow-right-circle"></i>Noticias
+                        y eventos</a
+                      >
+                    </p>
+                    <p>
+                      Consulta lo último sobre el IIUNAM<a
+                        href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Gaceta/Paginas/default.aspx"
+                        ><br /><i class="bi bi-arrow-right-circle"></i>Gaceta</a
+                      >
+                    </p>
+                    <p>
+                      Revisa la producción académica del IIUNAM.<a
+                        href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Articulos/Paginas/default.aspx"
+                        ><br /><i class="bi bi-arrow-right-circle"></i
+                        >Artículos</a
+                      >
+                    </p>
+                    <p>
+                      Encuentra contenido exclusivo<a
+                        href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Paginas/default.aspx"
+                        ><br /><i class="bi bi-arrow-right-circle"></i
+                        >Difusión</a
+                      >
+                    </p>
+                    <p>
+                      No te pierdas nuestras transmisiones<a
+                        href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Streaming/Paginas/default.aspx"
+                        ><br /><i class="bi bi-arrow-right-circle"></i
+                        >Videostreaming</a
+                      >
+                    </p>
+                  </div>
+                  <div class="contenedorl3">
+                    <h3>Síguenos</h3>
+                    <div class="redes">
+                      <a href="https://twitter.com/IIUNAM" target="_blank"
+                        ><i class="bi bi-twitter"></i
+                      ></a>
+                      <a
+                        href="https://www.facebook.com/InstitutoIngenieriaUNAM/"
+                        target="_blank"
+                        ><i class="bi bi-facebook"></i
+                      ></a>
+                      <a
+                        href="https://www.instagram.com/iiunam/"
+                        target="_blank"
+                        ><i class="bi bi-instagram"></i
+                      ></a>
+                      <a
+                        href="https://www.youtube.com/user/IINGENUNAM"
+                        target="_blank"
+                        ><i class="bi bi-youtube"></i
+                      ></a>
+                      <a
+                        href="https://www.linkedin.com/company/iiunam/"
+                        target="_blank"
+                        ><i class="bi bi-linkedin"></i
+                      ></a>
+                      <a href="#"><i class="bi bi-rss" target="_blank"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="contenedorl3">
+                    <h3>COVID 19 - IIUNAM</h3>
+                    <a
+                      href="https://iingen.sharepoint.com/sites/Covid19-IIUNAM"
+                      target="_blank"
+                      ><img
+                        style="height: 60px"
+                        src="http://www.ii.unam.mx/es-mx/Paginas/Splash_bkp/img/logos/shield-ii-covid-black.svg"
+                        alt=""
+                    /></a>
+                    <p>Sitio interno</p>
+                    <br /><br />
+                    <p>
+                      Lineamientos generales<a
+                        href="http://www.iingen.unam.mx/es-mx/covid-19/Paginas/default.aspx"
+                        target="_blank"
+                        ><br /><i class="fas fa-arrow-circle-right"></i
+                        >COVID-19</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="contenedorl22">
+                  <h3>Misión</h3>
+                  <p>
+                    Contribuir al desarrollo del país y al bienestar de la
+                    sociedad a través de la investigación en ingeniería, de la
+                    formación de recursos humanos y de la vinculación con la
+                    sociedad.
+                  </p>
+                  <hr />
+                  <h3>Visión</h3>
+                  <p>
+                    Ser el centro de investigación en ingeniería más relevante,
+                    de mayor calidad y pertinencia en México, con capacidades
+                    para competir a niveles internacionales. Ser generador de
+                    conocimientos aplicables a la solución de los grandes
+                    problemas de la ingeniería nacional. Ser formador de nuevas
+                    generaciones de ingenieros e investigadores de alta calidad
+                    comprometidos con el país.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <button
@@ -188,244 +475,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </main>
-    <footer>
-      <div class="limitador">
-        <div class="contenedorl1">
-          <div class="redes2">
-            <div
-              id="addthis_toolbox"
-              class="addthis_toolbox addthis_32x32_white_style circular"
-            >
-              <a class="addthis_button_email"></a>
-              <a class="addthis_button_print"></a>
-              <a class="addthis_button_facebook"></a>
-              <a class="addthis_button_twitter"></a>
-            </div>
-            <script
-              type="text/javascript"
-              src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd0fd6f571f6845"
-            ></script>
-            <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <div class="addthis_sharing_toolbox"></div>
-            <!-- Go to www.addthis.com/dashboard to customize your tools -->
-          </div>
-        </div>
-        <div id="line">
-          <hr style="border-top: dashed 1px" />
-        </div>
-
-        <div class="contenedorl1">
-          <div class="contenedorl2">
-            <div class="contenedorl3">
-              <h3>Acerca del IIUNAM</h3>
-
-              <p>
-                En 1956 comienza la historia<a
-                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Historia.aspx"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Historia</a
-                >
-              </p>
-              <p>
-                Conoce más sobre el IIUNAM<a
-                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/default.aspx"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Nosotros</a
-                >
-              </p>
-              <p>
-                Cómo llegar al Instituto<a
-                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Ubicacion.aspx"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Ubicación</a
-                >
-              </p>
-              <p>
-                Conoce la estructura del IIUNAM<a
-                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Organizacion/Paginas/default.aspx"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Organización</a
-                >
-              </p>
-              <p>
-                Reserva tu espacio y acompáñanos<a
-                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/VisitasGuiadas.aspx"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Visitas
-                  guiadas</a
-                >
-              </p>
-              <p>
-                Envíanos tus comentarios<a
-                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Contacto.aspx"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Contacto</a
-                >
-              </p>
-            </div>
-            <div class="contenedorl3">
-              <h3>Servicios IIUNAM</h3>
-
-              <p>
-                Buscas un libro, comunícate<a
-                  href="http://sitios.iingen.unam.mx/USIBiblioteca/"
-                  target="_blank"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>USI
-                  Biblioteca</a
-                >
-              </p>
-              <p>
-                Servicio interno de correo<a
-                  href="https://mail.iingen.unam.mx/owa/auth/logon.aspx?replaceCurrent=1&amp;url=https%3a%2f%2fmail.iingen.unam.mx%2fowa%2f"
-                  target="_blank"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Correo
-                  IINGEN</a
-                >
-              </p>
-              <p>
-                Servicio interno de correo<a
-                  href="https://pumas.iingen.unam.mx/"
-                  target="_blank"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Correo PUMAS</a
-                >
-              </p>
-              <p>
-                <a
-                  href="http://intranet.iingen.unam.mx/default.aspx"
-                  target="_blank"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>INTRANET</a
-                >
-              </p>
-              <p>
-                <a
-                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Paginas/Directorio.aspx"
-                  target="_blank"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Directorio</a
-                >
-              </p>
-              <p>
-                Comisión Interna para la Igualdad de Género<a
-                  href="http://www.iingen.unam.mx/es-mx/Nosotros/Genero/CInIG/Paginas/default.aspx"
-                  target="_blank"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>CInIG-IIUNAM</a
-                >
-              </p>
-              <p>
-                Apoyo a distancia
-                <a
-                  href="https://iingen.sharepoint.com/sites/Docencia/"
-                  target="_blank"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Actividades
-                  académicas</a
-                >
-                <a
-                  href="https://iingen.sharepoint.com/sites/Espora"
-                  target="_blank"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Programa
-                  ESPORA</a
-                >
-              </p>
-            </div>
-            <div class="contenedorl3">
-              <h3>Difusión</h3>
-
-              <p>
-                Toda la información aquí<a
-                  href="http://www.iingen.unam.mx/es-mx/Difusion/Paginas/default.aspx"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Noticias y
-                  eventos</a
-                >
-              </p>
-              <p>
-                Consulta lo último sobre el IIUNAM<a
-                  href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Gaceta/Paginas/default.aspx"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Gaceta</a
-                >
-              </p>
-              <p>
-                Revisa la producción académica del IIUNAM.<a
-                  href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Articulos/Paginas/default.aspx"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Artículos</a
-                >
-              </p>
-              <p>
-                Encuentra contenido exclusivo<a
-                  href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Paginas/default.aspx"
-                  ><br /><i class="bi bi-arrow-right-circle"></i>Difusión</a
-                >
-              </p>
-              <p>
-                No te pierdas nuestras transmisiones<a
-                  href="http://www.iingen.unam.mx/es-mx/AlmacenDigital/Streaming/Paginas/default.aspx"
-                  ><br /><i class="bi bi-arrow-right-circle"></i
-                  >Videostreaming</a
-                >
-              </p>
-            </div>
-            <div class="contenedorl3">
-              <h3>Síguenos</h3>
-              <div class="redes">
-                <a href="https://twitter.com/IIUNAM" target="_blank"
-                  ><i class="bi bi-twitter"></i
-                ></a>
-                <a
-                  href="https://www.facebook.com/InstitutoIngenieriaUNAM/"
-                  target="_blank"
-                  ><i class="bi bi-facebook"></i
-                ></a>
-                <a href="https://www.instagram.com/iiunam/" target="_blank"
-                  ><i class="bi bi-instagram"></i
-                ></a>
-                <a
-                  href="https://www.youtube.com/user/IINGENUNAM"
-                  target="_blank"
-                  ><i class="bi bi-youtube"></i
-                ></a>
-                <a
-                  href="https://www.linkedin.com/company/iiunam/"
-                  target="_blank"
-                  ><i class="bi bi-linkedin"></i
-                ></a>
-                <a href="#"><i class="bi bi-rss" target="_blank"></i></a>
-              </div>
-            </div>
-
-            <div class="contenedorl3">
-              <h3>COVID 19 - IIUNAM</h3>
-              <a
-                href="https://iingen.sharepoint.com/sites/Covid19-IIUNAM"
-                target="_blank"
-                ><img
-                  style="height: 60px"
-                  src="http://www.ii.unam.mx/es-mx/Paginas/Splash_bkp/img/logos/shield-ii-covid-black.svg"
-                  alt=""
-              /></a>
-              <p>Sitio interno</p>
-              <br /><br />
-              <p>
-                Lineamientos generales<a
-                  href="http://www.iingen.unam.mx/es-mx/covid-19/Paginas/default.aspx"
-                  target="_blank"
-                  ><br /><i class="fas fa-arrow-circle-right"></i>COVID-19</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="contenedorl22">
-            <h3>Misión</h3>
-            <p>
-              Contribuir al desarrollo del país y al bienestar de la sociedad a
-              través de la investigación en ingeniería, de la formación de
-              recursos humanos y de la vinculación con la sociedad.
-            </p>
-            <hr />
-            <h3>Visión</h3>
-            <p>
-              Ser el centro de investigación en ingeniería más relevante, de
-              mayor calidad y pertinencia en México, con capacidades para
-              competir a niveles internacionales. Ser generador de conocimientos
-              aplicables a la solución de los grandes problemas de la ingeniería
-              nacional. Ser formador de nuevas generaciones de ingenieros e
-              investigadores de alta calidad comprometidos con el país.
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <footer class="container"></footer>
     <div id="copy">
       <div class="limitador">
         <p>
