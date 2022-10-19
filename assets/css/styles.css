@@ -306,4 +306,119 @@ footer p {
   }
 }
 
+/* 3 CONTAINER */
+
+.red-div {
+  background-image: url("../img/dot-grid.webp");
+
+  width: 100vw;
+  padding: 100px 0px;
+  display: block;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.red-div .mision {
+  padding: 0px 120px;
+  color: #555;
+}
+
+.mision h1 {
+  font-size: 3em;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+.mision p {
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 2em;
+  width: 90%;
+}
+
+.red-div img {
+  width: 50%;
+  max-width: 900px;
+  transition: all 0.7s ease;
+  border-radius: 10px;
+}
+
+.red-div img:hover {
+  transform: scale(1.1);
+}
+
+.mision a {
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  background-color: #96292c;
+  background: linear-gradient(to left, #96292c 50%, #6a0003 /*#397987*/ 50%)
+    right;
+  background-size: 200%;
+  transition: 0.3s ease-out;
+  border-radius: 15px;
+  text-decoration: none;
+  margin: 30px 0px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.mision a:hover {
+  background-position: left;
+}
+
+.mision a:active {
+  transition: transform 0.15s ease;
+  transform: scale(0.9);
+}
+
+@media (max-width: 1000px) {
+  div.red-div {
+    flex-direction: column-reverse;
+    padding-top: 0px;
+  }
+
+  div.red-div img {
+    max-width: none;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  div.red-div div.mision {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 60px auto;
+    text-align: center;
+  }
+
+  div.mision h1 {
+    font-size: 2.5em;
+  }
+
+  div.red-div div.mision p {
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    line-height: 2.5em;
+  }
+
+  div.red-div div.mision a {
+    text-align: center;
+    max-width: 60%;
+    padding: 10px;
+    line-height: 1.2em;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+/* 3 CONTAINER */
+
 /*FOOTER*/
