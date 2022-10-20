@@ -38,6 +38,26 @@ body {
   margin-top: 4rem;
 }
 
+.home {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  color: white;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.home__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-shadow: -10px -10px 10px rgba(0, 0, 0, 0.5);
+  margin-left: 2rem;
+}
+
 .main__img {
   display: block;
   max-width: 100vw;
@@ -392,7 +412,6 @@ div.invanddif {
 }
 
 div.difusion {
-  width: 50vw;
   padding: 50px 0px;
 }
 
@@ -403,7 +422,6 @@ div.noti {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /*    margin-bottom: -200px;*/
 }
 
 div.noti h1 {
@@ -414,7 +432,7 @@ div.noti h1 {
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%; /*Este porcentaje es para que el iframe tenga formato 16:9, tomen awita*/
+  padding-bottom: 56.25%;
 }
 .video {
   position: absolute;
@@ -444,11 +462,10 @@ div.noti h1 {
   max-width: 1200px;
   width: 65%;
   margin: auto;
-  margin-left: 150px;
 }
 
-.contenidos-dig h1 {
-  text-align: right;
+.contenidos-dig > h1 {
+  text-align: center;
 }
 
 .contenidos-dig h1 span {
@@ -458,7 +475,7 @@ div.noti h1 {
 .contenidos-dig .conts {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .conts .cont {
@@ -554,6 +571,12 @@ div.noti h1 {
     width: 180%;
     height: 80vh;
     z-index: -1;
+  }
+  div.invanddif {
+    flex-direction: column;
+  }
+  div.content {
+    margin: 0 auto;
   }
 }
 
@@ -757,6 +780,10 @@ div.proyectos div.proyecto a:active {
   color: #464646;
   font-weight: 400;
   background-color: #f1f1f1;
+}
+
+#about p > a {
+  color: #a90101;
 }
 
 footer {
